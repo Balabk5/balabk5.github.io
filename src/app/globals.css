@@ -9,6 +9,9 @@ body {
 
   
 }
+.portfoliio-grid{
+height: 60%;
+}
 .wrapper{
   width: 90%;
   height: auto;
