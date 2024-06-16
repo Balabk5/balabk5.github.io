@@ -38,6 +38,11 @@ height: 60%;
   overflow: hidden;
   
 }
+.about-me-description{
+  height: 17rem;
+  overflow-y: scroll;
+}
+
 .profile-sub-cont-3::-webkit-scrollbar, .about-me-description::-webkit-scrollbar {
   display: none;
 }

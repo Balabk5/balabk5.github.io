@@ -19,6 +19,9 @@ const TechStackComponent: React.FC<TechStackComponentProps> = ({ item }) => {
           width={item.width}
           alt="Tech stack logo"
           quality={100}
+          className="rounded-lg"
+
+        
         />
       </div>
   );
