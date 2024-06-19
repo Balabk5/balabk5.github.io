@@ -46,3 +46,52 @@ height: 60%;
 .profile-sub-cont-3::-webkit-scrollbar, .about-me-description::-webkit-scrollbar {
   display: none;
 }
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+.delay-2 {
+  animation-delay: 1s;
+}
+.delay-3 {
+  animation-delay: 1.5s;
+}
+.delay-4 {
+  animation-delay: 2s;
+}
+.delay-5 {
+  animation-delay: 2.5s;
+}
+.profile-wrapper {
+  perspective: 1000px;
+  width: 75px;
+  height: 75px;
+}
+
+.profile-inner {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-img, .profile-img-3d {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-img-3d {
+  transform: rotateY(180deg);
+}

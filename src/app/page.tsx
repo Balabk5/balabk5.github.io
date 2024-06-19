@@ -1,7 +1,7 @@
 "use client";
 import TechStackComponent from "@/components/tech-stack";
 import Image from "next/image";
-import React, { use, useEffect, useRef } from "react";
+import React, { use, useEffect, useRef, useState } from "react";
 import { Application } from "@splinetool/runtime";
 
 export default function Home() {
@@ -23,6 +23,7 @@ export default function Home() {
     { src: "/techstack/17.png", height: 25, width: 25 },
     { src: "/techstack/18.png", height: 25, width: 25 },
   ];
+  const [flipped, setFlipped] = useState(false);
 
   let techAndToolsList = [{ imageName: "/techstack/1.png", bgColor: "" }];
   const canvasRef = useRef(null);
@@ -31,26 +32,48 @@ export default function Home() {
     <div className="h-full md:h-full lg:h-screen w-full flex justify-center items-center  text-white font-poppins 	">
       <div className="wrapper p-2 flex flex-col lg:flex lg:flex-row justify-center gap-4 items-center">
         {/* Profile Section */}
-        <div className="w-2/5 w-full md:order-2 flex flex-col gap-2 portfoliio-grid profile-cont">
-          <div className="profile-sub-cont-3 portfoliio-grid-item h-auto w-full rounded-lg p-6">
+        <div className="w-2/5 w-full md:order-2 flex flex-col gap-2 portfoliio-grid profile-cont ">
+          <div className="profile-sub-cont-3 portfoliio-grid-item h-auto w-full rounded-lg p-6 animate-moveDown ">
             <h1 className="text-base mb-4">Tech Stack and Tools</h1>
-            <div className="h-auto w-full flex flex-row flex-wrap gap-x-6 gap-y-4  md:gap-x-10 md:gap-y-6  lg:gap-x-6 lg:gap-y-4 overflow-auto	">
+            <div className="h-auto w-full flex flex-row flex-wrap gap-x-6 gap-y-4  md:gap-x-10 md:gap-y-4  lg:gap-x-6 lg:gap-y-5 overflow-auto	">
               {imageList.map((item, index) => (
                 <TechStackComponent key={index} item={item} />
               ))}
             </div>
           </div>
-          <div className="profile-sub-cont-2 portfoliio-grid-item h-auto w-full flex flex-col justify-center gap-4 px-6 py-6 relative rounded-lg">
+          <div className="profile-sub-cont-2 portfoliio-grid-item h-auto w-full flex flex-col justify-center gap-4 px-6 py-6 relative rounded-lg animate-moveDown">
             <div className="profile-img-and-detail-cont flex flex-row">
-              <div className="profile-img">
-                <Image
-                  src="/bala-profile-pic.png"
-                  height={75}
-                  width={75}
-                  alt="profile-pic"
-                  quality={100}
-                />
+              <div
+                className="profile-wrapper"
+                onMouseEnter={() => setFlipped(true)}
+                onMouseLeave={() => setFlipped(false)}
+              >
+                <div
+                  className={`profile-inner ${
+                    flipped ? "animate-flip" : "animate-flipBack"
+                  }`}
+                >
+                  <div className="profile-img">
+                    <Image
+                      src="/bala-profile-pic.png"
+                      height={75}
+                      width={75}
+                      alt="profile-pic"
+                      quality={100}
+                    />
+                  </div>
+                  <div className="profile-img-3d">
+                    <Image
+                      src="/3d-avatar.png" // Replace with your 3D avatar image path
+                      height={75}
+                      width={75}
+                      alt="3d-avatar"
+                      quality={100}
+                    />
+                  </div>
+                </div>
               </div>
+
               <div className="profile-header-cont p-1 flex flex-col justify-center mx-2">
                 <h1 className="text-xl">BalaKumar M</h1>
                 <p className="text-xs">Software Developer</p>
@@ -114,23 +137,20 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="resume-cont flex flex-row gap-2 items-center absolute top-3 right-3 px-3 py-2 border-2 rounded-md border-slate-800">
-              <span className="relative flex h-3 w-3">
+            <div className="resume-cont tech-stack-cont absolute top-3 right-3 flex flex-row gap-2 items-center px-3 py-2  ">
+              <div className="absolute top-1 -right-2 flex h-3 w-3 -translate-x-1/2 -translate-y-1/2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-400"></span>
-              </span>
+              </div>
               <div className="resume-description flex flex-row gap-1">
                 <p className="text-xs">Resume</p>
-                <span className="material-symbols-outlined text-xs">
-                  arrow_outward
-                </span>
               </div>
             </div>
           </div>
 
-          <div className="profile-sub-cont-1 portfoliio-grid-item h-auto w-full rounded-lg p-6">
+          <div className="profile-sub-cont-1 portfoliio-grid-item h-auto w-full rounded-lg p-6 animate-moveDown">
             <h1 className="text-base mb-4">Recent Blogs</h1>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-6">
               <div className="bolg-wrapper h-auto w-full flex flex-row gap-2 items-center	">
                 <TechStackComponent
                   item={{
@@ -203,7 +223,7 @@ export default function Home() {
         </div>
         {/* About Me Section */}
         <div className="w-2/5   w-full md:order-1 flex flex-col gap-2 portfoliio-grid about-me-cont">
-          <div className="about-me-sub-cont-1 portfoliio-grid-item h-1/2 w-full rounded-lg p-6 overflow-hidden	">
+          <div className="about-me-sub-cont-1 portfoliio-grid-item h-1/2 w-full rounded-lg p-6 overflow-hidden	animate-moveDown">
             <h1 className="text-base mb-4">Get to know about me</h1>
             <div className="	 about-me-description 	">
               <p className="text-xs text-slate-400	mb-2">
@@ -237,7 +257,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="about-me-sub-cont-2 portfoliio-grid-item h-1/2 w-full rounded-lg p-6">
+          <div className="about-me-sub-cont-2 portfoliio-grid-item h-1/2 w-full rounded-lg p-6 animate-moveDown">
             <h1 className="text-base mb-4 ">Over the years</h1>
             <div className="job-role-time-line-wrapper h-auto w-auto flex flex-col gap-2 ">
               <div className="job-role-time-line flex flex-row gap-2">
@@ -276,7 +296,7 @@ export default function Home() {
 
         {/* Projects and Contact Section */}
         <div className="w-2/5 w-full md:order-3 flex flex-col gap-2 portfoliio-grid projects-and-contact-cont">
-          <div className="about-me-sub-cont-1 portfoliio-grid-item h-4/5 w-full rounded-lg p-6">
+          <div className="about-me-sub-cont-1 portfoliio-grid-item h-4/5 w-full rounded-lg p-6 animate-moveDown">
             <h1 className="text-base mb-4 ">Projects</h1>
             <div className="projects-cont flex flex-col gap-6 ">
               <div className="project-wrapper w-full h-auto flex flex-row gap-2 ">
@@ -289,7 +309,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="project-description w-3/4	">
+                <div className="project-description w-3/4 flex flex-col gap-2	">
                   <h1 className="text-base">Data Intelligence Hub</h1>
                   <p className="text-xs text-slate-400">
                     A portal for data science and machine learning, offering
@@ -297,6 +317,20 @@ export default function Home() {
                     analysis, and sales forecasting. Streamlines workflows and
                     enhances data-driven decision-making.
                   </p>
+                  <div className="flex flex-row gap-1">
+                  <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">React</p>
+                    </div>
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">Python</p>
+                    </div>
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">MongoDB</p>
+                    </div>
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">Pandas</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div className="project-wrapper w-full h-auto flex flex-row gap-2 ">
@@ -309,7 +343,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="project-description w-3/4">
+                <div className="project-description w-3/4 flex flex-col gap-2	">
                   <h1 className="text-base">Farmers supportive web app</h1>
                   <p className="text-xs text-slate-400">
                     A web app for new farmers that predicts suitable crops and
@@ -317,6 +351,15 @@ export default function Home() {
                     plant diseases with remedies, and provides a Beginner&apos;s
                     guide and current market prices.
                   </p>
+                  <div className="flex flex-row gap-1">
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">Python</p>
+                    </div>
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">Flask</p>
+                    </div>
+                 
+                  </div>
                 </div>
               </div>
               <div className="project-wrapper w-full h-auto flex flex-row gap-2 ">
@@ -329,7 +372,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="project-description w-3/4">
+                <div className="project-description w-3/4 flex flex-col gap-2">
                   <h1 className="text-base">Wedding Decarators</h1>
                   <p className="text-xs text-slate-400">
                     Created a captivating landing page for a top Coimbatore
@@ -337,9 +380,20 @@ export default function Home() {
                     locations. This project highlights expertise in crafting
                     engaging digital experiences for the events industry.
                   </p>
+                  <div className="flex flex-row gap-1">
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">UX/UI</p>
+                    </div>
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">Figma</p>
+                    </div>
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">React</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="project-wrapper w-full h-auto flex flex-row gap-2 ">
+              {/* <div className="project-wrapper w-full h-auto flex flex-row gap-2 ">
                 <div className="project-thumbnail w-1/4">
                   <TechStackComponent
                     item={{
@@ -349,7 +403,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-                <div className="project-description w-3/4">
+                <div className="project-description w-3/4 flex flex-col gap-1	">
                   <h1 className="text-base">Wedding Decarators</h1>
                   <p className="text-xs text-slate-400">
                     Created a captivating landing page for a top Coimbatore
@@ -357,11 +411,19 @@ export default function Home() {
                     locations. This project highlights expertise in crafting
                     engaging digital experiences for the events industry.
                   </p>
+                  <div className="flex flex-row gap-1">
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">UX/UI</p>
+                    </div>
+                    <div className="py-1 px-2 tech-stack-cont">
+                      <p className="text-xs">Figma</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
-          <div className="about-me-sub-cont-2 portfoliio-grid-item h-1/5 w-full rounded-lg p-6">
+          <div className="about-me-sub-cont-2 portfoliio-grid-item h-1/5 w-full rounded-lg p-6 animate-moveDown">
             <h1 className="text-3xl  ">Let&apos;s 👋</h1>
             <h1 className="text-3xl mb-4">work together</h1>
 
