@@ -95,3 +95,21 @@ height: 60%;
 .profile-img-3d {
   transform: rotateY(180deg);
 }
+
+.sm-item{
+  cursor: pointer;
+}
+.link-btn{
+  transform: rotate(45deg);
+}
+.blog-heading{
+  cursor: pointer;
+}
+.blog-heading .link-btn {
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.blog-heading:hover .link-btn {
+  transform: translate(3px, -3px) rotate(45deg); /* Move the icon to the right by 10px and up by 10px while keeping the 45deg rotation */
+
+}

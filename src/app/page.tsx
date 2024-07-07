@@ -103,38 +103,70 @@ export default function Home() {
                 <p className="text-xs">Front-End Dev</p>
               </div>
             </div>
-            <div className="social-menus-cont flex flex-row gap-4">
-              <div className="twitter">
-                <Image
-                  src="svg/socials/icons8-twitterx.svg"
-                  height={16}
-                  width={16}
-                  alt="Twitter logo"
-                />
+            <div className="social-menus-cont flex flex-row gap-4 items-center	">
+              <div className="linkedin sm-item">
+                <a
+                  href="https://www.linkedin.com/in/balabk57/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="svg/socials/icons8-linkedin.svg"
+                    height={16}
+                    width={16}
+                    alt="linkedin logo"
+                  />
+                </a>
               </div>
-              <div className="instagram">
-                <Image
-                  src="svg/socials/icons8-instagram.svg"
-                  height={16}
-                  width={16}
-                  alt="Instagram logo"
-                />
+              <div className="twitter sm-item">
+                <a
+                  href="https://github.com/Balabk5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="svg/socials/icons8-github.svg"
+                    height={16}
+                    width={16}
+                    alt="github logo"
+                  />
+                </a>
               </div>
-              <div className="linkedin">
-                <Image
-                  src="svg/socials/icons8-linkedin.svg"
-                  height={16}
-                  width={16}
-                  alt="linkedin logo"
-                />
+              <div className="twitter sm-item">
+                <a
+                  href="https://x.com/Thedevbk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="svg/socials/icons8-twitterx.svg"
+                    height={13}
+                    width={13}
+                    alt="Twitter logo"
+                  />
+                </a>
               </div>
-              <div className="discord">
+              {/* <div className="discord sm-item">
                 <Image
                   src="svg/socials/icons8-discord.svg"
                   height={16}
                   width={16}
                   alt="discord logo"
                 />
+              </div> */}
+              <div className="instagram sm-item">
+                <a
+                  href="https://www.instagram.com/bala._.bk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="svg/socials/icons8-instagram.svg"
+                    height={16}
+                    width={16}
+                    alt="Instagram logo"
+                  />
+                </a>
               </div>
             </div>
             <div className="resume-cont tech-stack-cont absolute top-3 right-3 flex flex-row gap-2 items-center px-3 py-2  ">
@@ -160,9 +192,14 @@ export default function Home() {
                   }}
                 />
                 <div className="flex  flex-col gap-1">
-                  <p className="text-xs">
-                    Elevate Your Design Game with Typography Essentials
-                  </p>
+                  <div className="flex flex-row gap-1 blog-heading ">
+                    <p className="text-xs">
+                      Elevate Your Design Game with Typography Essentials
+                    </p>
+                    <span className="material-symbols-outlined link-btn text-xs">
+                      north
+                    </span>
+                  </div>
                   <div className="flex flex-row gap-1">
                     <div className="py-1 px-2 tech-stack-cont">
                       <p className="text-xs">UX/UI</p>
@@ -182,7 +219,12 @@ export default function Home() {
                   }}
                 />
                 <div className="flex  flex-col gap-1">
-                  <p className="text-xs">Learn about signal in angular</p>
+                  <div className="flex flex-row gap-1 blog-heading ">
+                    <p className="text-xs">Learn about signal in angular</p>
+                    <span className="material-symbols-outlined link-btn text-xs">
+                      north
+                    </span>
+                  </div>
                   <div className="flex flex-row gap-1 flex-wrap">
                     <div className="py-1 px-2 tech-stack-cont">
                       <p className="text-xs">Angular</p>
@@ -205,9 +247,14 @@ export default function Home() {
                   }}
                 />
                 <div className="flex  flex-col gap-1">
-                  <p className="text-xs">
-                    Elevate Your Design Game with Typography Essentials
-                  </p>
+                  <div className="flex flex-row gap-1 blog-heading ">
+                    <p className="text-xs">
+                      Elevate Your Design Game with Typography Essentials
+                    </p>
+                    <span className="material-symbols-outlined link-btn text-xs">
+                      north
+                    </span>
+                  </div>
                   <div className="flex flex-row gap-1">
                     <div className="py-1 px-2 tech-stack-cont">
                       <p className="text-xs">UX/UI</p>
@@ -310,7 +357,18 @@ export default function Home() {
                   />
                 </div>
                 <div className="project-description w-3/4 flex flex-col gap-2	">
-                  <h1 className="text-base">Data Intelligence Hub</h1>
+                  <div className="flex flex-row gap-1 blog-heading items-center ">
+                  <a
+                  href="https://github.com/Balabk5/DIgiVerz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                    <h1 className="text-base">Data Intelligence Hub</h1>
+                  </a>
+                    <span className="material-symbols-outlined link-btn text-xs">
+                      north
+                    </span>
+                  </div>
                   <p className="text-xs text-slate-400">
                     A portal for data science and machine learning, offering
                     tools for data quality reporting, model building, algorithm
@@ -318,7 +376,7 @@ export default function Home() {
                     enhances data-driven decision-making.
                   </p>
                   <div className="flex flex-row gap-1">
-                  <div className="py-1 px-2 tech-stack-cont">
+                    <div className="py-1 px-2 tech-stack-cont">
                       <p className="text-xs">React</p>
                     </div>
                     <div className="py-1 px-2 tech-stack-cont">
@@ -344,7 +402,18 @@ export default function Home() {
                   />
                 </div>
                 <div className="project-description w-3/4 flex flex-col gap-2	">
-                  <h1 className="text-base">Farmers supportive web app</h1>
+                  <div className="flex flex-row gap-1 blog-heading items-center ">
+                  <a
+                  href="https://github.com/Balabk5/fswa-final"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                    <h1 className="text-base">Farmers supportive web app</h1>
+                    </a>
+                    <span className="material-symbols-outlined link-btn text-xs">
+                      north
+                    </span>
+                  </div>
                   <p className="text-xs text-slate-400">
                     A web app for new farmers that predicts suitable crops and
                     fertilizers based on soil type and location, identifies
@@ -358,7 +427,6 @@ export default function Home() {
                     <div className="py-1 px-2 tech-stack-cont">
                       <p className="text-xs">Flask</p>
                     </div>
-                 
                   </div>
                 </div>
               </div>
@@ -373,7 +441,18 @@ export default function Home() {
                   />
                 </div>
                 <div className="project-description w-3/4 flex flex-col gap-2">
-                  <h1 className="text-base">Wedding Decarators</h1>
+                  <div className="flex flex-row gap-1 blog-heading items-center ">
+                  <a
+                  href="https://github.com/Balabk5/wedding_decors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                    <h1 className="text-base">Wedding Decarators</h1>
+                  </a>
+                    <span className="material-symbols-outlined link-btn text-xs">
+                      north
+                    </span>
+                  </div>
                   <p className="text-xs text-slate-400">
                     Created a captivating landing page for a top Coimbatore
                     wedding decorator, showcasing their works, testimonials, and
