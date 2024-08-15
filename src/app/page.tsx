@@ -435,7 +435,7 @@ export default function Home() {
                   <TechStackComponent
                     item={{
                       src: "/Projects/Wedding-decarators.png",
-                      height: 100,
+                      height: 100,  
                       width: 500,
                     }}
                   />
