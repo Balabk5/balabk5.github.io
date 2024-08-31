@@ -535,16 +535,24 @@ export default function Home() {
               </div> */}
             </div>
           </div>
-          <div className="about-me-sub-cont-2 portfoliio-grid-item h-1/5 w-full rounded-lg p-6 animate-moveDown">
+          <div className="about-me-sub-cont-2 portfoliio-grid-item h-1/5 w-full rounded-lg p-6 animate-moveDown relative">
             <h1 className="text-3xl  ">Let&apos;s 👋</h1>
             <h1 className="text-3xl mb-4">work together</h1>
             <a href="mailto:mail4workbk@gmail.com?subject=Hello&body=I wanted to reach out to you...">
             <p className="text-base sm-item underline">Let&apos;s talk</p>
             </a>
+            <div className="lets-talk-image-cont absolute -bottom-7 right-0">
+            <Image
+                    src="/lets-talk.png"
+                    height={150}
+                    width={150}
+                    alt="Instagram logo"
+                  />
+            </div>
           </div>
         </div>
       </div>
-      <p className="text-sm p-1">Do what you love, Limited Time❗</p>
+      <p className="text-sm pt-6 pb-1 md:p-1">Do what you love, Limited Time❗</p>
     </div>
   );
 }
