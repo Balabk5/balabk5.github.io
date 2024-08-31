@@ -62,9 +62,17 @@ export default function Home() {
                       quality={100}
                     />
                   </div>
-                  <div className="profile-img-3d">
+                  <div
+                    className="profile-img-3d"
+                    style={{
+                      borderRadius: "50%",
+                      overflow: "hidden",
+                      width: 75,
+                      height: 75,
+                    }}
+                  >
                     <Image
-                      src="/3d-avatar.png" // Replace with your 3D avatar image path
+                      src="/Animated-profile-pic.JPEG"
                       height={75}
                       width={75}
                       alt="3d-avatar"
@@ -169,7 +177,12 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="resume-cont tech-stack-cont absolute top-3 right-3 flex flex-row gap-2 items-center px-3 py-2  ">
+            <div className="resume-cont sm-item tech-stack-cont absolute top-3 right-3 flex flex-row gap-2 items-center px-3 py-2  ">
+              <a
+                href="https://drive.google.com/file/d/1UevpbArMPoi2BfpHdWHQQA7Cp6mxCznR/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
               <div className="absolute top-1 -right-2 flex h-3 w-3 -translate-x-1/2 -translate-y-1/2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-400"></span>
@@ -177,6 +190,7 @@ export default function Home() {
               <div className="resume-description flex flex-row gap-1">
                 <p className="text-xs">Resume</p>
               </div>
+              </a>
             </div>
           </div>
 
@@ -193,9 +207,15 @@ export default function Home() {
                 />
                 <div className="flex  flex-col gap-1">
                   <div className="flex flex-row gap-1 blog-heading ">
+                  <a
+                  href="https://www.linkedin.com/posts/balabk57_typography-essentials-for-web-and-mobile-activity-7161337838486118400-_tAB?utm_source=share&utm_medium=member_desktop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                     <p className="text-xs">
                       Elevate Your Design Game with Typography Essentials
                     </p>
+                    </a>
                     <span className="material-symbols-outlined link-btn text-xs">
                       north
                     </span>
@@ -213,14 +233,21 @@ export default function Home() {
               <div className="bolg-wrapper h-auto w-full flex flex-row gap-2 items-center	">
                 <TechStackComponent
                   item={{
-                    src: "/socials/medium.png",
+                    src: "/socials/linked-in-logo.png",
                     height: 40,
                     width: 40,
                   }}
                 />
                 <div className="flex  flex-col gap-1">
                   <div className="flex flex-row gap-1 blog-heading ">
-                    <p className="text-xs">Learn about signal in angular</p>
+                  <a
+                  href="https://www.linkedin.com/posts/balabk57_the-ultimate-guide-to-reactive-programming-activity-7220057311057211394-bet4?utm_source=share&utm_medium=member_desktop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                    <p className="text-xs"> Ready to master RxJS in Angular?
+                    </p>
+                    </a>
                     <span className="material-symbols-outlined link-btn text-xs">
                       north
                     </span>
@@ -241,16 +268,22 @@ export default function Home() {
               <div className="bolg-wrapper h-auto w-full flex flex-row gap-2 items-center	">
                 <TechStackComponent
                   item={{
-                    src: "/socials/medium.png",
+                    src: "/socials/linked-in-logo.png",
                     height: 40,
                     width: 40,
                   }}
                 />
                 <div className="flex  flex-col gap-1">
                   <div className="flex flex-row gap-1 blog-heading ">
+                  <a
+                  href="https://www.linkedin.com/posts/balabk57_ux-vs-ui-activity-7112073238364516353-sKjd?utm_source=share&utm_medium=member_desktop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                     <p className="text-xs">
-                      Elevate Your Design Game with Typography Essentials
+                    Why UX and UI are Like Peanut Butter and Jelly
                     </p>
+                    </a>
                     <span className="material-symbols-outlined link-btn text-xs">
                       north
                     </span>
@@ -358,13 +391,13 @@ export default function Home() {
                 </div>
                 <div className="project-description w-3/4 flex flex-col gap-2	">
                   <div className="flex flex-row gap-1 blog-heading items-center ">
-                  <a
-                  href="https://github.com/Balabk5/DIgiVerz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >
-                    <h1 className="text-base">Data Intelligence Hub</h1>
-                  </a>
+                    <a
+                      href="https://github.com/Balabk5/DIgiVerz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h1 className="text-base">Data Intelligence Hub</h1>
+                    </a>
                     <span className="material-symbols-outlined link-btn text-xs">
                       north
                     </span>
@@ -403,12 +436,12 @@ export default function Home() {
                 </div>
                 <div className="project-description w-3/4 flex flex-col gap-2	">
                   <div className="flex flex-row gap-1 blog-heading items-center ">
-                  <a
-                  href="https://github.com/Balabk5/fswa-final"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                    <h1 className="text-base">Farmers supportive web app</h1>
+                    <a
+                      href="https://github.com/Balabk5/fswa-final"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h1 className="text-base">Farmers supportive web app</h1>
                     </a>
                     <span className="material-symbols-outlined link-btn text-xs">
                       north
@@ -435,20 +468,20 @@ export default function Home() {
                   <TechStackComponent
                     item={{
                       src: "/Projects/Wedding-decarators.png",
-                      height: 100,  
+                      height: 100,
                       width: 500,
                     }}
                   />
                 </div>
                 <div className="project-description w-3/4 flex flex-col gap-2">
                   <div className="flex flex-row gap-1 blog-heading items-center ">
-                  <a
-                  href="https://github.com/Balabk5/wedding_decors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                    <h1 className="text-base">Wedding Decarators</h1>
-                  </a>
+                    <a
+                      href="https://github.com/Balabk5/wedding_decors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <h1 className="text-base">Wedding Decarators</h1>
+                    </a>
                     <span className="material-symbols-outlined link-btn text-xs">
                       north
                     </span>
@@ -505,8 +538,9 @@ export default function Home() {
           <div className="about-me-sub-cont-2 portfoliio-grid-item h-1/5 w-full rounded-lg p-6 animate-moveDown">
             <h1 className="text-3xl  ">Let&apos;s 👋</h1>
             <h1 className="text-3xl mb-4">work together</h1>
-
+            <a href="mailto:mail4workbk@gmail.com?subject=Hello&body=I wanted to reach out to you...">
             <p className="text-base underline">Let&apos;s talk</p>
+            </a>
           </div>
         </div>
       </div>
