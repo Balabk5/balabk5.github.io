@@ -9,15 +9,13 @@ body {
 
   
 }
-.portfoliio-grid{
-height: 60%;
-}
+
 .wrapper{
   width: 90%;
-  height: auto;
+  height: 100%;
 }
 .portfoliio-grid{
-  height: 90%;
+  height: 100%;
 }
 
 .portfoliio-grid-item{

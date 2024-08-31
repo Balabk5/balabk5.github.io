@@ -29,8 +29,8 @@ export default function Home() {
   const canvasRef = useRef(null);
 
   return (
-    <div className="h-full md:h-full lg:h-screen w-full flex justify-center items-center  text-white font-poppins 	">
-      <div className="wrapper p-2 flex flex-col lg:flex lg:flex-row justify-center gap-4 items-center">
+    <div className="h-auto w-full flex flex-col	 items-center p-2 text-white font-poppins 	">
+      <div className="wrapper p-2 flex flex-col lg:flex lg:flex-row justify-center gap-4 ">
         {/* Profile Section */}
         <div className="w-2/5 w-full md:order-2 flex flex-col gap-2 portfoliio-grid profile-cont ">
           <div className="profile-sub-cont-3 portfoliio-grid-item h-auto w-full rounded-lg p-6 animate-moveDown ">
@@ -510,6 +510,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <p className="text-sm p-1">Do what you love, Limited Time❗</p>
     </div>
   );
 }
