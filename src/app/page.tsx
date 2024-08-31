@@ -72,7 +72,7 @@ export default function Home() {
                     }}
                   >
                     <Image
-                      src="/animated-profile-pic.JPEG"
+                      src="/animated-profile-pic.jpeg"
                       height={75}
                       width={75}
                       alt="3d-avatar"
