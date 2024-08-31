@@ -72,7 +72,7 @@ export default function Home() {
                     }}
                   >
                     <Image
-                      src="/Animated-profile-pic.JPEG"
+                      src="/animated-profile-pic.JPEG"
                       height={75}
                       width={75}
                       alt="3d-avatar"
@@ -84,7 +84,7 @@ export default function Home() {
 
               <div className="profile-header-cont p-1 flex flex-col justify-center mx-2">
                 <h1 className="text-xl">BalaKumar M</h1>
-                <p className="text-xs">Software Developer</p>
+                <p className="text-xs">SDE-2</p>
               </div>
             </div>
             <div className="profile-tags flex flex-row flex-wrap gap-3">
@@ -539,7 +539,7 @@ export default function Home() {
             <h1 className="text-3xl  ">Let&apos;s 👋</h1>
             <h1 className="text-3xl mb-4">work together</h1>
             <a href="mailto:mail4workbk@gmail.com?subject=Hello&body=I wanted to reach out to you...">
-            <p className="text-base underline">Let&apos;s talk</p>
+            <p className="text-base sm-item underline">Let&apos;s talk</p>
             </a>
           </div>
         </div>
