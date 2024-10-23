@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.0.5-canary.59",
     "@splinetool/runtime": "^1.4.9",
     "next": "14.2.3",
     "react": "^18",

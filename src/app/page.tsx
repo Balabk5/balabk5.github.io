@@ -3,6 +3,8 @@ import TechStackComponent from "@/components/tech-stack";
 import Image from "next/image";
 import React, { use, useEffect, useRef, useState } from "react";
 import { Application } from "@splinetool/runtime";
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 
 export default function Home() {
   let imageList = [
@@ -30,6 +32,8 @@ export default function Home() {
 
   return (
     <div className="h-auto w-full flex flex-col	 items-center p-2 text-white font-poppins 	">
+            <GoogleAnalytics gaId="G-YK69QJ1P9M" />
+
       <div className="wrapper p-2 flex flex-col lg:flex lg:flex-row justify-center gap-4 ">
         {/* Profile Section */}
         <div className="w-2/5 w-full md:order-2 flex flex-col gap-2 portfoliio-grid profile-cont ">
