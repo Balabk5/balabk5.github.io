@@ -112,7 +112,7 @@ export default function Home() {
               </div>
               <div className="profile-tag-1 w-auto flex flex-row items-center gap-1 pl-0 pr-1 px-2">
                 <span className="material-symbols-outlined text-sm">sdk</span>
-                <p className="text-xs">Front-End Dev</p>
+                <p className="text-xs">Full-Stack Dev</p>
               </div>
             </div>
             <div className="social-menus-cont flex flex-row gap-4 items-center	">
@@ -183,7 +183,7 @@ export default function Home() {
             </div>
             <div className="resume-cont sm-item tech-stack-cont absolute top-3 right-3 flex flex-row gap-2 items-center px-3 py-2  ">
               <a
-                href="https://drive.google.com/file/d/1UevpbArMPoi2BfpHdWHQQA7Cp6mxCznR/view"
+                href="https://drive.google.com/file/d/1WZKC72LmGjFHuYFxF05W1QH_1lnmli6N/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -349,7 +349,7 @@ export default function Home() {
                   <p className="text-xs text-slate-400">Nov 2022 - Present</p>
                 </div>
                 <div className="job-role-timeline-description w-3/5	 ">
-                  <p className="mb-1">Frontend Developer - Kaar tech</p>
+                  <p className="mb-1">Full-Stack Developer - Kaar tech</p>
                   <p className="text-xs text-slate-400">
                     Work closely with cross-functional teams, including
                     developers, designers, and product managers, to implement
