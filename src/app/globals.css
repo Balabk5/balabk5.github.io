@@ -3,72 +3,83 @@
 @tailwind utilities;
 
 body {
-  background-color: #050D20; /* Set the background color */
+  background-color: #050D20;
   background-image: url('../../public/hero-glow-f6eed469bca2\ 1.png');
   background-size: cover;
-
-  
 }
 
-.wrapper{
+/* Layout Styles */
+.wrapper {
   width: 90%;
   height: 100%;
 }
-.portfoliio-grid{
+
+/* Portfolio Grid Styles */
+.portfolio-grid {
   height: 100%;
 }
 
-.portfoliio-grid-item{
-  background-color: rgba(89, 89, 89, 0.08); 
-  /* opacity: 0.03; */
-}
-.tech-stack-cont{
- background-color: #1c78c026;
- border-radius: .5rem;
+.portfolio-grid-item {
+  background-color: rgba(89, 89, 89, 0.08);
 }
 
+/* Tech Stack Styles */
+.tech-stack-cont {
+  background-color: #1c78c026;
+  border-radius: .5rem;
+}
 
-
-
-.profile-sub-cont-3{
+/* Profile Section Styles */
+.profile-sub-cont-3 {
   max-height: 40%;
   min-height: 40%;
   overflow: hidden;
-  
 }
-.about-me-description{
+
+/* About Me Section Styles */
+.about-me-description {
   height: 17rem;
   overflow-y: scroll;
 }
 
-.profile-sub-cont-3::-webkit-scrollbar, .about-me-description::-webkit-scrollbar {
+.profile-sub-cont-3::-webkit-scrollbar,
+.about-me-description::-webkit-scrollbar {
   display: none;
 }
 
+/* Animations */
 @keyframes moveDown {
   from {
     transform: translateY(-50px);
   }
+
   to {
     transform: translateY(0);
   }
 }
 
+/* Animation Delays */
 .delay-1 {
   animation-delay: 0.5s;
 }
+
 .delay-2 {
   animation-delay: 1s;
 }
+
 .delay-3 {
   animation-delay: 1.5s;
 }
+
 .delay-4 {
   animation-delay: 2s;
 }
+
 .delay-5 {
   animation-delay: 2.5s;
 }
+
+/* Profile Flip Animation */
 .profile-wrapper {
   perspective: 1000px;
   width: 75px;
@@ -83,7 +94,8 @@ body {
   height: 100%;
 }
 
-.profile-img, .profile-img-3d {
+.profile-img,
+.profile-img-3d {
   position: absolute;
   backface-visibility: hidden;
   width: 100%;
@@ -94,20 +106,24 @@ body {
   transform: rotateY(180deg);
 }
 
-.sm-item{
+/* Interactive Elements */
+.sm-item {
   cursor: pointer;
 }
-.link-btn{
+
+/* Link and Blog Styles */
+.link-btn {
   transform: rotate(45deg);
 }
-.blog-heading{
+
+.blog-heading {
   cursor: pointer;
 }
+
 .blog-heading .link-btn {
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease;
 }
 
 .blog-heading:hover .link-btn {
-  transform: translate(3px, -3px) rotate(45deg); /* Move the icon to the right by 10px and up by 10px while keeping the 45deg rotation */
-
+  transform: translate(3px, -3px) rotate(45deg);
 }
