@@ -1,0 +1,31 @@
+{
+  "filename": "Experience.tsx",
+  "path": "src\\components\\Experience.tsx",
+  "version": "1.1",
+  "files": {
+    "fcc8d1a1": {
+      "value": [
+        {
+          "programming_language": "TypeScript",
+          "fileName": "Contact.tsx",
+          "relativeFilePath": "src/components/Contact.tsx",
+          "startLine": [
+            1
+          ],
+          "endLine": [
+            99
+          ]
+        }
+      ]
+    }
+  },
+  "promptMessage": {
+    "6aed878b": {
+      "value": "<div className=\"absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#914BF1]/3 rounded-full blur-[150px]\" />\nchange it to purple color"
+    }
+  },
+  "localPrompts": {},
+  "remotePrompts": {},
+  "figma": {},
+  "jira": {}
+}

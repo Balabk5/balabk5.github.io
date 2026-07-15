@@ -1,0 +1,36 @@
+{
+  "src\\components\\Contact.tsx": {
+    "filename": "Contact.tsx",
+    "path": "src\\components\\Contact.tsx",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "035e31": {
+        "user": "Balakumar M",
+        "model": "gpt-4.1",
+        "timestamp": 1778504442,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "b20b9214",
+          "files": "fcc8d1a1"
+        },
+        "hash": "f049931e",
+        "messageId": "system_563e8ad0-4d39-11f1-a35d-851069fcb78a",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "37": {
+        "chunkId": "035e31",
+        "hash": "d6b15933",
+        "encoded": "%3Cdiv%20className=%22absolute%20top-0%20left-1/2%20-translate-x-1/2%20w-40%20h-px%20bg-gradient-to-r%20from-transparent%20via-%5B#914BF1%5D/50%20to-transparent%22%20/%3E",
+        "prevChunkIds": []
+      }
+    }
+  }
+}

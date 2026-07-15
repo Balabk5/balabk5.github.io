@@ -1,0 +1,60 @@
+{
+  "src\\components\\Experience.tsx": {
+    "filename": "Experience.tsx",
+    "path": "src\\components\\Experience.tsx",
+    "version": "1.2",
+    "contextFile": null,
+    "chunks": {
+      "b4b2c4": {
+        "user": "Balakumar M",
+        "model": "gpt-4.1",
+        "timestamp": 1778504183,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "6aed878b",
+          "files": "fcc8d1a1"
+        },
+        "hash": "bf3bbc1e",
+        "messageId": "system_a804f300-4d38-11f1-a35d-851069fcb78a",
+        "codeBlockId": null,
+        "isActive": true
+      },
+      "db2eff": {
+        "user": "Balakumar M",
+        "model": "gpt-4.1",
+        "timestamp": 1778504183,
+        "platform": "VisualStudioCode",
+        "product": "AIPP",
+        "productVersion": "2.4.1",
+        "source": "agent",
+        "type": "agentEditTool",
+        "extraContext": {
+          "promptMessage": "6aed878b",
+          "files": "fcc8d1a1"
+        },
+        "hash": "44df0550",
+        "messageId": "system_a804f300-4d38-11f1-a35d-851069fcb78a",
+        "codeBlockId": null,
+        "isActive": true
+      }
+    },
+    "lines": {
+      "33": {
+        "chunkId": "db2eff",
+        "hash": "2b58b87d",
+        "encoded": "%3Cdiv%20className=%22absolute%20left-0%20md:left-1/2%20md:-translate-x-px%20top-0%20bottom-0%20w-px%20bg-gradient-to-b%20from-%5B#914BF1%5D/70%20via-%5B#914BF1%5D/20%20to-transparent%22%20/%3E",
+        "prevChunkIds": []
+      },
+      "46": {
+        "chunkId": "b4b2c4",
+        "hash": "7377c0ef",
+        "encoded": "%3Cdiv%20className=%22absolute%20left-0%20md:left-1/2%20-translate-x-1/2%20w-4%20h-4%20rounded-full%20bg-%5B#914BF1%5D%20border-2%20border-%5B#914BF1%5D%20z-10%20hidden%20md:block%22%20/%3E",
+        "prevChunkIds": []
+      }
+    }
+  }
+}
