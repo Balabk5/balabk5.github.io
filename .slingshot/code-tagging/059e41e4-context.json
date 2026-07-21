@@ -22,6 +22,12 @@
   "promptMessage": {
     "b20b9214": {
       "value": "<div className=\"absolute top-0 left-1/2 -translate-x-1/2 w-40 h-px bg-gradient-to-r from-transparent via-[#c8ff00]/50 to-transparent\" />\n change this bg to purple"
+    },
+    "1a06f344": {
+      "value": "https://github.com/Balabk5/balabk5.github.io.git this is the remote origin, there is one old repo is sitting there, but i need to force push the repo which i have in local."
+    },
+    "05e8e239": {
+      "value": "remote: Permission to Balabk5/balabk5.github.io.git denied to balabk575.\nfatal: unable to access 'https://github.com/Balabk5/balabk5.github.io.git/': The requested URL returned error: 403\n\nbut my user name is balabk5"
     }
   },
   "localPrompts": {},
